@@ -1,0 +1,128 @@
+:root {
+  --negro: #211f1f;
+  --blanco: #ebe5e5;
+  --gris: #909090;
+  --rojo: #873333;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .m-plus-rounded-1c-medium {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .m-plus-rounded-1c-bold {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+@font-face {
+  font-family: "skate";
+  src: url(/fonts/skateboarder-7bl3v-webfont.woff2);
+}
+@font-face {
+  font-family: "suice";
+  src: url(/fonts/eyeswidesuicide-vvzm-webfont.woff2);
+}
+header {
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.174);
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-right: 20px;
+}
+nav ul li {
+  padding: 5px;
+  font-family: suice;
+  letter-spacing: 1px;
+  /* color: var(--blanco); */
+}
+a {
+  text-decoration: none;
+  color: var(--blanco);
+  transition: all 0.5s;
+}
+a:hover {
+  color: var(--rojo);
+  text-decoration: none;
+}
+h1 {
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+#logo {
+  height: 25px;
+}
+#principal {
+  background-image: url(/img/sectionPrincipalBack.jpg);
+  height: 80vh;
+  background-attachment: fixed;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  font-family: suice;
+  letter-spacing: 2px;
+  align-items: center;
+  background-size: cover;
+  color: var(--blanco);
+}
+#sectionSecundario {
+background-image: url(/img/secSec.jpg);
+background-attachment: fixed;
+background-size: cover;
+  color: var(--blanco);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+#divSecundario {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+#artSecundario {
+  padding-inline: 10px;
+  margin-left: 10px;
+  background-color: rgba(128, 128, 128, 0.67);
+  border-radius: 4px;
+}
+#elEventoImg {
+  width: 280px;
+}
+#divArtSec {
+  display: flex;
+  padding: 10px;
+}
+.divArtSec2 {
+  padding: 5px;
+  font-size: small;
+}
+.pTitSec{
+    font-weight: 900;
+}
