@@ -97,7 +97,7 @@ h1 {
   line-height: 40px;
 }
 #sectionSecundario {
-  background-image: url(/img/secSec.jpg);
+  background-image: url(/img/secSec1.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: var(--blanco);
@@ -134,7 +134,7 @@ h1 {
 }
 #servicios {
   padding-top: 20px;
-  background-image: url(/img/service.jpg);
+  background-image: url(/img/service1.jpg);
   background-attachment: fixed;
   background-size: cover;
   display: flex;
