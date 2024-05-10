@@ -1,8 +1,9 @@
 :root {
   --negro: #211f1f;
   --blanco: #ebe5e5;
-  --gris: #333333;
+  --gris: #232323;
   --rojo: #873333;
+  --gristransp: rgba(55, 55, 55, 0.626);
 }
 * {
   margin: 0;
@@ -103,7 +104,7 @@ h1 {
   background-image: url(../img/secSec1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  color: var(--blanco);
+  color: gray;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -119,9 +120,9 @@ h1 {
 #artSecundario {
   padding: 30px;
   margin-left: 10px;
-  background-color: rgba(128, 128, 128, 0.67);
+  background-color: var(--gristransp);
   border-radius: 4px;
-line-height: 40px;
+  line-height: 40px;
 }
 #elEventoImg {
   width: 580px;
@@ -146,8 +147,15 @@ line-height: 40px;
   flex-direction: column;
   align-items: center;
 }
+#servdiv {
+  width: 1200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #articleServ {
-  color: var(--blanco);
+  color: gray;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -157,19 +165,20 @@ line-height: 40px;
   align-self: flex-start;
 }
 #gridServ {
-  margin-top: 15px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px 200px 200px;
   gap: 10px;
 }
 #gridServ article {
-  background-color: #a3a3a358;
+  background-color: var(--gristransp);
   border-radius: 8px;
   padding: 8px;
+  color: grey;
 }
 #gridServ article p {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 #grsr1 {
   grid-column: 1;
@@ -191,4 +200,12 @@ line-height: 40px;
 #grsr5 {
   grid-column: 2;
   grid-row: 2;
+}
+#artistas {
+  height: 100vh;
+  background-color: #030303;
+  opacity: 0.9;
+  background-image:  repeating-linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%, #000000), repeating-linear-gradient(45deg, #000000 25%, #030303 25%, #030303 75%, #000000 75%, #000000);
+  background-position: 0 0, 32px 32px;
+  background-size: 64px 64px;
 }
