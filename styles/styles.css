@@ -247,11 +247,11 @@ h1 {
   overflow: hidden;
 }
 #listaArtistas thead tr {
-  background-color: #424242e3;
+  background-color: #242424e3;
   text-align: left;
 }
 #listaArtistas tbody tr:last-of-type {
-  border-bottom: 9px solid #424242e3;
+  border-bottom: 9px solid #242424e3;
 }
 #listaArtistas th {
   padding: 15px;
