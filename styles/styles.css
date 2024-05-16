@@ -101,6 +101,7 @@ h1 {
   color: var(--blanco);
   line-height: 40px;
 }
+/* Separo section y div por prolijidad */
 #elEvento {
   background-image: url(../img/secSec1.jpg);
   background-attachment: fixed;
@@ -111,34 +112,32 @@ h1 {
   font-size: 30px;
   letter-spacing: 0.5px;
 }
-#divSecundario {
+#divEvento {
   padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   letter-spacing: 0.5px;
 }
-#artSecundario {
+#articleEventos {
   padding: 30px;
   margin-left: 10px;
   background-color: var(--gristransp);
   border-radius: 4px;
   line-height: 40px;
 }
-#elEventoImg {
+#divEvento figure img {
   width: 580px;
 }
-#divArtSec {
+#divEventoInfo {
   display: flex;
   padding: 20px;
 }
-.divArtSec2 {
+#divEventoInfo div {
   padding: 5px;
   font-size: 20px;
 }
-.pTitSec {
-  font-weight: 900;
-}
+/* Separo section y div por prolijidad */
 #servicios {
   padding-top: 20px;
   background-image: url(../img/service1.jpg);
@@ -148,24 +147,24 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-#servdiv {
-  width: 1200px;
+#divServicios{
+  width: 1050px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#articleServ {
+#divTituloServicios {
   color: var(--letras);
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   margin-left: 70px;
 }
-#articleServ h2 {
+#divTituloServicios h2 {
   align-self: flex-start;
 }
-#gridServ {
+#gridServicios {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -173,36 +172,15 @@ h1 {
   gap: 10px;
   margin-bottom: 60px;
 }
-#gridServ article {
+#gridServicios article {
   background-color: var(--gristransp);
   border-radius: 8px;
   padding: 8px;
   color: var(--letras);
 }
-#gridServ article p {
+#gridServicios article p {
   margin-top: 10px;
 }
-/* #grsr1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-#grsr2 {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-#grsr3 {
-  grid-column: 3;
-  grid-row: 1;
-}
-#grsr4 {
-  grid-column: 1;
-  grid-row: 2;
-}
-#grsr5 {
-  grid-column: 2;
-  grid-row: 2;
-} */
 #artistas {
   height: 100%;
   /* generado con una herramienta web https://www.magicpattern.design/tools/css-backgrounds */
@@ -231,7 +209,7 @@ h1 {
   justify-content: flex-start;
   flex-direction: column;
 }
-#articleArt {
+#divArtistas {
   display: flex;
   margin-top: 80px;
   align-items: center;
