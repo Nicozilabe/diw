@@ -101,7 +101,7 @@ h1 {
   color: var(--blanco);
   line-height: 40px;
 }
-#sectionSecundario {
+#elEvento {
   background-image: url(../img/secSec1.jpg);
   background-attachment: fixed;
   background-size: cover;
