@@ -4,6 +4,7 @@
   --gris: #232323;
   --rojo: #873333;
   --gristransp: rgba(55, 55, 55, 0.626);
+  --letras: rgb(193, 193, 193);
 }
 @font-face {
   font-family: "skate";
@@ -104,7 +105,7 @@ h1 {
   background-image: url(../img/secSec1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  color: gray;
+  color: rgb(193, 193, 193);
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -155,7 +156,7 @@ h1 {
   align-items: center;
 }
 #articleServ {
-  color: gray;
+  color: var(--letras);
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -175,7 +176,7 @@ h1 {
   background-color: var(--gristransp);
   border-radius: 8px;
   padding: 8px;
-  color: grey;
+  color: var(--letras);
 }
 #gridServ article p {
   margin-top: 10px;
@@ -204,26 +205,11 @@ h1 {
 #artistas {
   height: 100%;
   /* generado con una herramienta web https://www.magicpattern.design/tools/css-backgrounds */
-  background-color: #030303;
-  opacity: 0.9;
-  background-image: repeating-linear-gradient(
-      45deg,
-      #000000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000000 75%,
-      #000000
-    ),
-    repeating-linear-gradient(
-      45deg,
-      #000000 25%,
-      #030303 25%,
-      #030303 75%,
-      #000000 75%,
-      #000000
-    );
-  background-position: 0 0, 32px 32px;
-  background-size: 64px 64px;
+  background-color: #2d2d2d;
+  opacity: 1;
+  background-image:  repeating-linear-gradient(45deg, #030303 25%, transparent 25%, transparent 75%, #030303 75%, #030303), repeating-linear-gradient(45deg, #030303 25%, #2d2d2d 25%, #2d2d2d 75%, #030303 75%, #030303);
+  background-position: 0 0, 31px 31px;
+  background-size: 62px 62px;
   color: var(--blanco);
   display: flex;
   justify-content: flex-start;
@@ -245,11 +231,11 @@ h1 {
   overflow: hidden;
 }
 #listaArtistas thead tr {
-  background-color: #42424247;
+  background-color: #424242e3;
   text-align: left;
 }
 #listaArtistas tbody tr:last-of-type {
-  border-bottom: 7px solid #42424247;
+  border-bottom: 9px solid #424242e3;
 }
 #listaArtistas th {
   padding: 15px;
