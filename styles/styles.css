@@ -5,6 +5,14 @@
   --rojo: #873333;
   --gristransp: rgba(55, 55, 55, 0.626);
 }
+@font-face {
+  font-family: "skate";
+  src: url(../fonts/skateboarder-7bl3v-webfont.woff2);
+}
+@font-face {
+  font-family: "suice";
+  src: url(../fonts/eyeswidesuicide-vvzm-webfont.woff2);
+}
 * {
   margin: 0;
   padding: 0;
@@ -35,14 +43,6 @@ html {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "skate";
-  src: url(../fonts/skateboarder-7bl3v-webfont.woff2);
-}
-@font-face {
-  font-family: "suice";
-  src: url(../fonts/eyeswidesuicide-vvzm-webfont.woff2);
-}
 header {
   display: flex;
   position: absolute;
@@ -203,9 +203,71 @@ h1 {
 }
 #artistas {
   height: 100vh;
+  /* generado con una herramienta web https://www.magicpattern.design/tools/css-backgrounds */
   background-color: #030303;
   opacity: 0.9;
-  background-image:  repeating-linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%, #000000), repeating-linear-gradient(45deg, #000000 25%, #030303 25%, #030303 75%, #000000 75%, #000000);
+  background-image: repeating-linear-gradient(
+      45deg,
+      #000000 25%,
+      transparent 25%,
+      transparent 75%,
+      #000000 75%,
+      #000000
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #000000 25%,
+      #030303 25%,
+      #030303 75%,
+      #000000 75%,
+      #000000
+    );
   background-position: 0 0, 32px 32px;
   background-size: 64px 64px;
+}
+#artistas {
+  color: var(--blanco);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+#articleArt {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#listaArtistas{
+  align-self: center;
+  margin-top: 50px;
+  width: 1200px;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#listaArtistas thead tr{
+  background-color: #42424247;
+  text-align: left;
+
+}
+#listaArtistas tbody tr:last-of-type{
+  border-bottom: 7px solid #42424247;
+}
+#listaArtistas th{
+  padding: 15px;
+}
+#listaArtistas td {
+  padding: 15px;
+}
+#listaArtistas figure{
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+#listaArtistas figure img{
+  width: 40px;
+  border-radius: 25px;
 }
