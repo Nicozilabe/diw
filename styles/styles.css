@@ -129,7 +129,7 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-#divServicios{
+#divServicios {
   width: 1050px;
   margin-top: 50px;
   display: flex;
@@ -253,4 +253,121 @@ h1 {
 }
 #gridArtistas figure:nth-child(4) {
   grid-row-start: span 2;
+}
+.tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--letras);
+  background-color: #0e0e0e;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.tickets h2 {
+  font-size: 55px;
+}
+.listaTickets {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+.divTickets {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: var(--gristransp);
+  gap: 30px;
+  line-height: 40px;
+  font-size: x-large;
+}
+.divTickets div {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  /* con esto más el gap suma 1200px de ancho fijo */
+  width: 575px;
+}
+.divTickets div article ul li {
+  list-style-image: url(../img/li-removebg-preview\ \(Custom\).png);
+}
+.divTickets input[type="button"] {
+  transition-duration: 1s;
+  width: 100%;
+  height: 40px;
+  background-color: var(--gris);
+  color: var(--letras);
+  border-radius: 20px;
+  font-size: 25px;
+}
+.divTickets input[type="button"]:hover {
+  background-color: #000000;
+}
+.novedades{
+  background-color: var(--gris);
+  display: flex;
+  justify-content: center;
+}
+#novedadesAuxiliar{
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding-top: 40px;
+  justify-content: center;
+  padding-bottom: 40px;
+  color: var(--letras);
+  width: 1200px;
+}
+.novedadesMain{
+  background-color: var(--gristransp);
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.novedadesMain h2{
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+#formNovedades label{
+  display: block;
+  margin-top: 20px;
+}
+#formNovedades input[type=text]{
+  width: 100%;
+  height: 30px;
+  background-color: var(--gristransp);
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 20px;
+}
+#formNovedades input[type=email]{
+  width: 100%;
+  height: 30px;
+  background-color: var(--gristransp);
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 20px;
+}
+#formNovedades input[type="radio"]+label, #formNovedades input[type=checkbox]+label{
+  display: inline;
+}
+.redes{
+  /* con esto suma 1200px de ancho fijo */
+  width: 580px;
+}
+#formNovedades fieldset{
+margin-top: 20px;
+}
+#formNovedades input[type=submit]{
+  margin-top: 20px;
+  transition-duration: 1s;
+  width: 100%;
+  height: 40px;
+  background-color: var(--gris);
+  color: var(--letras);
+  border-radius: 20px;
+  font-size: 25px;
+}
+#formNovedades input[type=submit]:hover{
+background-color: #000000;
 }
