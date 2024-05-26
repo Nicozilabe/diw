@@ -133,7 +133,7 @@ h1 {
   align-items: center;
 }
 #divServicios {
-  width: 1050px;
+  width: 1200px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -144,7 +144,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  margin-left: 70px;
 }
 #divTituloServicios h2 {
   align-self: flex-start;
@@ -152,7 +151,7 @@ h1 {
 #gridServicios {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(2, 200px);
   gap: 10px;
   margin-bottom: 60px;
@@ -284,6 +283,7 @@ h1 {
   font-size: 55px;
 }
 .listaTickets {
+  width: 1200px;
   display: flex;
   gap: 50px;
   margin-top: 70px;
