@@ -239,7 +239,11 @@ h1 {
   grid-gap: 15px;
   margin-bottom: 30px;
 }
+#gridArtistas figure{
+  position: relative;
+}
 #gridArtistas figure img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -253,6 +257,15 @@ h1 {
 }
 #gridArtistas figure:nth-child(4) {
   grid-row-start: span 2;
+}
+#gridArtistas figure figcaption{
+  position: absolute;
+  font-size: 30px;
+  background-color: var(--gristransp);
+  padding: 15px;
+  border-radius: 12px;
+  bottom: 0;
+  right: 0;
 }
 .tickets {
   display: flex;
@@ -402,6 +415,9 @@ background-color: #000000;
   list-style: none;
 }
 .redes ul li img{
+  padding: 3px;
+  /* no me gusta para nada ese borde pero lo pongo por las dudas */
+  border: 3px solid var(--letras);
   width: 50px;
 }
 #foot{
