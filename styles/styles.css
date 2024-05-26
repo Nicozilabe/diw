@@ -239,7 +239,7 @@ h1 {
   grid-gap: 15px;
   margin-bottom: 30px;
 }
-#gridArtistas figure{
+#gridArtistas figure {
   position: relative;
 }
 #gridArtistas figure img {
@@ -258,7 +258,8 @@ h1 {
 #gridArtistas figure:nth-child(4) {
   grid-row-start: span 2;
 }
-#gridArtistas figure figcaption{
+#gridArtistas figure figcaption {
+  /* en el wireframe está mas hacia el centro de la imagen, lo pongo al borde porque me parece que es más estetico, aunque yo directamente no podríá figcaption */
   position: absolute;
   font-size: 30px;
   background-color: var(--gristransp);
@@ -300,7 +301,7 @@ h1 {
   width: 575px;
 }
 .divTickets div article ul li {
-  list-style-image: url(../img/li-removebg-preview\ \(Custom\).png);
+  list-style-image: url(../img/li.png);
 }
 .divTickets input[type="button"] {
   transition-duration: 1s;
@@ -316,12 +317,12 @@ h1 {
 .divTickets input[type="button"]:hover {
   background-color: #000000;
 }
-.novedades{
+.novedades {
   background-color: var(--gris);
   display: flex;
   justify-content: center;
 }
-#novedadesAuxiliar{
+#novedadesAuxiliar {
   display: flex;
   align-items: flex-end;
   gap: 20px;
@@ -331,7 +332,7 @@ h1 {
   color: var(--letras);
   width: 1200px;
 }
-.novedadesMain{
+.novedadesMain {
   background-color: var(--gristransp);
   padding: 20px;
   border-radius: 10px;
@@ -339,19 +340,20 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.novedadesMain h2{
+.novedadesMain h2 {
   font-size: xx-large;
   margin-bottom: 20px;
 }
-.novedadesMain p{
+.novedadesMain p {
   font-size: large;
 }
-#formNovedades label{
+#formNovedades label {
   font-size: large;
   display: block;
   margin-top: 20px;
 }
-#formNovedades input[type=text], #formNovedades input[type=email]{
+#formNovedades input[type="text"],
+#formNovedades input[type="email"] {
   width: 100%;
   height: 30px;
   background-color: var(--gristransp);
@@ -360,24 +362,25 @@ h1 {
   font-size: 20px;
   border: none;
 }
-#formNovedades input[type="radio"], #formNovedades input[type=checkbox]{
+#formNovedades input[type="radio"],
+#formNovedades input[type="checkbox"] {
   width: 30px;
   margin-top: 10px;
-
 }
-#formNovedades input[type="radio"]+label, #formNovedades input[type=checkbox]+label{
+#formNovedades input[type="radio"] + label,
+#formNovedades input[type="checkbox"] + label {
   display: inline;
 }
-.redes{
+.redes {
   /* con esto suma 1200px de ancho fijo */
   width: 580px;
 }
-#formNovedades fieldset{
-margin-top: 20px;
-border: none;
-font-size: large;
+#formNovedades fieldset {
+  margin-top: 20px;
+  border: none;
+  font-size: large;
 }
-#formNovedades input[type=submit]{
+#formNovedades input[type="submit"] {
   margin-top: 20px;
   transition-duration: 1s;
   width: 100%;
@@ -389,13 +392,13 @@ font-size: large;
   border: none;
   cursor: pointer;
 }
-#formNovedades a{
+#formNovedades a {
   border-bottom: 1px solid var(--letras);
 }
-#formNovedades input[type=submit]:hover{
-background-color: #000000;
+#formNovedades input[type="submit"]:hover {
+  background-color: #000000;
 }
-.redes{
+.redes {
   background-color: var(--gristransp);
   padding: 22px;
   display: flex;
@@ -404,23 +407,23 @@ background-color: #000000;
   gap: 20px;
   border-radius: 10px;
 }
-.redes h3{
+.redes h3 {
   font-size: x-large;
 }
-.redes ul{
+.redes ul {
   display: flex;
   gap: 20px;
 }
-.redes ul li{
+.redes ul li {
   list-style: none;
 }
-.redes ul li img{
+.redes ul li img {
   padding: 3px;
   /* no me gusta para nada ese borde pero lo pongo por las dudas */
   border: 3px solid var(--letras);
   width: 50px;
 }
-#foot{
+#foot {
   background-color: var(--negro);
   color: var(--letras);
   display: flex;
