@@ -260,8 +260,8 @@ h1 {
   align-items: center;
   color: var(--letras);
   background-color: #0e0e0e;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 100px;
 }
 .tickets h2 {
   font-size: 55px;
@@ -269,7 +269,7 @@ h1 {
 .listaTickets {
   display: flex;
   gap: 50px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 .divTickets {
   padding: 15px;
@@ -297,6 +297,8 @@ h1 {
   color: var(--letras);
   border-radius: 20px;
   font-size: 25px;
+  border: none;
+  cursor: pointer;
 }
 .divTickets input[type="button"]:hover {
   background-color: #000000;
@@ -328,25 +330,27 @@ h1 {
   font-size: xx-large;
   margin-bottom: 20px;
 }
+.novedadesMain p{
+  font-size: large;
+}
 #formNovedades label{
+  font-size: large;
   display: block;
   margin-top: 20px;
 }
-#formNovedades input[type=text]{
+#formNovedades input[type=text], #formNovedades input[type=email]{
   width: 100%;
   height: 30px;
   background-color: var(--gristransp);
   border-radius: 10px;
   padding: 3px;
   font-size: 20px;
+  border: none;
 }
-#formNovedades input[type=email]{
-  width: 100%;
-  height: 30px;
-  background-color: var(--gristransp);
-  border-radius: 10px;
-  padding: 3px;
-  font-size: 20px;
+#formNovedades input[type="radio"], #formNovedades input[type=checkbox]{
+  width: 30px;
+  margin-top: 10px;
+
 }
 #formNovedades input[type="radio"]+label, #formNovedades input[type=checkbox]+label{
   display: inline;
@@ -357,6 +361,8 @@ h1 {
 }
 #formNovedades fieldset{
 margin-top: 20px;
+border: none;
+font-size: large;
 }
 #formNovedades input[type=submit]{
   margin-top: 20px;
@@ -367,7 +373,42 @@ margin-top: 20px;
   color: var(--letras);
   border-radius: 20px;
   font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+#formNovedades a{
+  border-bottom: 1px solid var(--letras);
 }
 #formNovedades input[type=submit]:hover{
 background-color: #000000;
+}
+.redes{
+  background-color: var(--gristransp);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.redes h3{
+  font-size: x-large;
+}
+.redes ul{
+  display: flex;
+  gap: 20px;
+}
+.redes ul li{
+  list-style: none;
+}
+.redes ul li img{
+  width: 50px;
+}
+#foot{
+  background-color: var(--negro);
+  color: var(--letras);
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
 }
