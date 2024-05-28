@@ -286,12 +286,13 @@ h1 {
   display: flex;
   gap: 50px;
   margin-top: 70px;
+  justify-content: space-between;
 }
 .divTickets {
   padding: 15px;
   border-radius: 4px;
   background-color: var(--gristransp);
-  gap: 30px;
+/*   gap: 30px; */
   line-height: 40px;
   font-size: x-large;
 }
@@ -299,8 +300,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   height: 200px;
-  /* con esto más el gap suma 1200px de ancho fijo */
-  width: 575px;
+  width: 550px;
 }
 .divTickets div article ul li {
   list-style-image: url(../img/li.png);
